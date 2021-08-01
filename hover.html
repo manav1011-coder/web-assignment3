@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+</head>
+<style>
+body{
+    background-color: black;
+}
+button{
+    position:relative;
+    border-radius: 0px;
+    border: 1px solid orange;
+    color: orange;
+    width: 300px;
+    height: 200px;
+    margin-top: 250px;
+    margin-left: 504px;
+    background: none;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+button:hover{
+    color: yellowgreen;
+    border:1px solid yellowgreen;
+    box-shadow: 2px 2px;
+     animation-name: example;
+     animation-duration:0.3s;
+     animation-fill-mode: forwards;
+}
+@keyframes example {
+    from{top:0px}
+    to{top:-3px;}
+}
+</style>
+<body>
+    <button>Hover Me</button>
+</body>
+</html>
